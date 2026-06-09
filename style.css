@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Outfit:wght@100..900&family=Poiret+One&display=swap');
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    /* font-optical-sizing: auto; */
+    /* font-weight:400; */
+    /* font-style: normal; */
+    background-color: #3a3838;  
+    /* overflow: hidden; */
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    font-size: 24px;
+    border: 1px  solid ;
+    border-color:rgb(42, 40, 40);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    /* border-radius: 24px ; */
+    width: 100%;
+}
+
+.logo a{
+    /* z-index: 99; */
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: aliceblue;
+    margin-right: 140px;
+    position: relative;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    list-style: none;
+}
+
+nav ul li a{
+    margin-left: 25px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: cadetblue;
+}
+nav ul li a::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    transition:  1s ease-in-out;
+    
+    /* transform: translateX(-100%); */
+}
+nav ul li a:hover::before{
+    height: 2px;
+    /* transform: translateX(0); */
+    width: 100%;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.about{
+    max-width: 60%;
+    min-height: 400px;
+    background-color: #2a2626;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    margin-top: 50px;
+    margin-left: 70px;
+    align-items: center;
+    /* justify-content: center; */
+    /* left: 300px; */
+    z-index: -1;
+
+}
+.about img{
+    height:10%;
+    width: 10%;
+}
+.about h2 {
+    margin-left: 40px;
+    /* opacity: 1; */
+}
+.about-2{
+    
+    max-width: 60%;
+    min-height: 400px;
+    background-color: #2a2626;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    margin: 10px;
+    align-items: center;
+    left: 300px;
+    z-index: -1;
+    margin-top: 1400px;
+    
+}
+.about-2 h2 {
+    opacity: 0;
+}

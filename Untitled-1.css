@@ -1,0 +1,131 @@
+*{
+    margin:0;padding: 0; box-sizing: border-box;
+}
+
+.container{
+    width: 100%;height: 100vh;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-image: url(img/c94b87aaf9e2a6af9ac67349c710c2ce.png);
+    /* padding: 10px;  */
+}
+nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul {
+    
+    list-style-type: none;
+}
+nav ul li {
+    
+    margin-left: 10px;
+    padding: 10px;
+    margin-left:10px ;
+    display: inline-block;
+}
+nav .logo{
+    height: 70px;width: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: azure;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background:linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    transition: 0.4s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+
+.text{
+    /* padding: 10%; */
+    color: #fffb00;
+    margin: 5% 5%;
+}
+.container .header-text h3{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+}
+.container .header-text p {
+    text-shadow: #002bff 0.4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-size: px; */
+    font-weight: 900;
+    /* background: linear-gradient(90deg,red,rgb(12, 0, 118)); */
+    max-width: 400px;
+    padding: 10px;
+    color: aliceblue;
+}
+.about-text{
+        padding: 10px;
+        background: #1f102f;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+.text .row .col-one{
+    flex-basis: 30%;
+}
+.text .row .col-one img{
+    width: 100%;border-radius: 50%;
+}
+.text .row .col-two{
+    flex-basis: 70%;
+    color: #00ffd0;
+}
+.row .col-two .sub-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.row .col-two .sub-titles .tab-link{
+    margin-right: 60px; font-size: 18px;
+    color: rgb(227, 6, 6);
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-link.active-link::after{
+    content: "";
+    width: 0px;height: 3px;
+    background: #3e4c49;
+    
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.4s ease-in-out;
+}
+.tab-link:hover::after{
+    width: 100%;
+    color: #ff0000;
+    
+}
+.tab-contint{
+    transition: 1s;
+    display: none;
+}
+.tab-contint ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contint.active-tab{
+    display: block;
+}
